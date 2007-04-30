@@ -1,6 +1,6 @@
 %define module  Class-Data-Inheritable
 %define name    perl-%{module}
-%define version 0.05
+%define version 0.06
 %define release %mkrel 1
 %define	pdir	Class
 
@@ -11,7 +11,7 @@ Summary: 	    Inheritable, overridable class data
 License: 	    GPL or Artistic
 Group: 		    Development/Perl
 Url:            http://search.cpan.org/dist/%{module}
-Source:         http://www.cpan.org/modules/by-module/WWW/%{module}-%{version}.tar.bz2
+Source:         http://www.cpan.org/modules/by-module/WWW/%{module}-%{version}.tar.gz
 %if %{mdkversion} < 1010
 Buildrequires:  perl-devel
 %endif
