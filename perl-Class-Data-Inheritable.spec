@@ -16,6 +16,7 @@ Source:         http://www.cpan.org/modules/by-module/WWW/%{module}-%{version}.t
 Buildrequires:  perl-devel
 %endif
 BuildArch: 	    noarch
+BuildRoot: 	    %{_tmppath}/%{name}-%{version}
 
 %description
 Class::Data::Inheritable is for creating accessor/mutators to class data. That
