@@ -1,22 +1,18 @@
 %define module  Class-Data-Inheritable
 %define name    perl-%{module}
-%define version 0.06
+%define version 0.08
 %define release %mkrel 1
-%define	pdir	Class
 
-Name: 		    %{name}
-Version: 	    %{version}
-Release: 	    %{release}
-Summary: 	    Inheritable, overridable class data
-License: 	    GPL or Artistic
-Group: 		    Development/Perl
-Url:            http://search.cpan.org/dist/%{module}
-Source:         http://www.cpan.org/modules/by-module/WWW/%{module}-%{version}.tar.gz
-%if %{mdkversion} < 1010
-Buildrequires:  perl-devel
-%endif
-BuildArch: 	    noarch
-BuildRoot: 	    %{_tmppath}/%{name}-%{version}
+Name: 		%{name}
+Version: 	%{version}
+Release: 	%{release}
+Summary: 	Inheritable, overridable class data
+License: 	GPL or Artistic
+Group: 	    Development/Perl
+Url:        http://search.cpan.org/dist/%{module}
+Source:     http://www.cpan.org/modules/by-module/Class/%{module}-%{version}.tar.gz
+BuildArch:  noarch
+BuildRoot:  %{_tmppath}/%{name}-%{version}
 
 %description
 Class::Data::Inheritable is for creating accessor/mutators to class data. That
